@@ -1,5 +1,5 @@
 <?php
-    class Product {
+    class Item {
         private $name;
         private $price;
         private $description;
@@ -11,4 +11,21 @@
             $this->description = $description;
             $this->ship_price = $ship_price;
         }
-}
+
+        public function getName() {
+            return $this->name;
+        }
+    
+        public function getPrice() {
+            return $this->price;
+        }
+
+        public function getDescription() {
+            return $this->description;
+        }
+
+        public function getShipPrice() {
+            return $this->ship_price;
+        }
+
+    }
